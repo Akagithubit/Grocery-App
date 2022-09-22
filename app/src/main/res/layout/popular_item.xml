@@ -42,7 +42,7 @@
                 android:layout_width="70dp"
                 android:layout_height="30dp"
                 android:src="@drawable/ratingbar"
-                android:layout_marginLeft="-5dp"/>
+                android:layout_marginStart="-5dp"/>
             <TextView
                 android:id="@+id/pop_rating"
                 android:layout_width="wrap_content"

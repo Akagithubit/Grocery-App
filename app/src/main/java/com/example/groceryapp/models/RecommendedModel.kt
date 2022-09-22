@@ -7,7 +7,7 @@ class RecommendedModel {
     var img_url: String? = null
     var price = 0
 
-    constructor() {}
+    constructor()
     constructor(
         name: String?,
         description: String?,

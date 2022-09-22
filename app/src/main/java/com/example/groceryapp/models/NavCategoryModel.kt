@@ -5,12 +5,6 @@ class NavCategoryModel {
     var discount: String? = null
     var img_url: String? = null
 
-    constructor() {}
-    constructor(name: String?, discount: String?, img_url: String?) {
-        this.name = name
-        this.discount = discount
-        this.img_url = img_url
-    }
 
     override fun equals(other: Any?): Boolean {
         if (this === other) return true

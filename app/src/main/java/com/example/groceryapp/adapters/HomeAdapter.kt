@@ -10,7 +10,6 @@ import com.bumptech.glide.Glide
 import android.content.Intent
 import android.view.View
 import android.widget.ImageView
-import com.example.groceryapp.activities.ViewAllActivity
 import android.widget.TextView
 
 class HomeAdapter(var context: Context, var categoryList: List<HomeCategory>) :

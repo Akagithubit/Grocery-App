@@ -1,5 +1,4 @@
 package com.example.groceryapp
-import android.graphics.fonts.Font
 import androidx.navigation.Navigation.findNavController
 import androidx.navigation.ui.NavigationUI.setupActionBarWithNavController
 import androidx.navigation.ui.NavigationUI.setupWithNavController

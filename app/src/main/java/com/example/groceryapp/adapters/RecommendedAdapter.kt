@@ -11,7 +11,7 @@ import com.example.groceryapp.R
 import com.bumptech.glide.Glide
 import android.widget.TextView
 
-class RecommendedAdapter(var context: Context, var list: List<RecommendedModel>) :
+class RecommendedAdapter(var context: Context, private var list: List<RecommendedModel>) :
     RecyclerView.Adapter<RecommendedAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(

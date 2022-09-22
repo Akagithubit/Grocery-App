@@ -5,7 +5,7 @@ class HomeCategory {
     var type: String? = null
     var img_url: String? = null
 
-    constructor() {}
+    constructor()
     constructor(name: String?, type: String?, img_url: String?) {
         this.name = name
         this.type = type

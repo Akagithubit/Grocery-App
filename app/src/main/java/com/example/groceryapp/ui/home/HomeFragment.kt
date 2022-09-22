@@ -68,7 +68,7 @@ class HomeFragment : Fragment() {
                         val popularModel = document.toObject(
                             PopularModel::class.java
                         )
-                        popularModelList.add(popularModel)
+                        (popularModelList as ArrayList<PopularModel>).add(popularModel)
                         popularAdapters!!.notifyDataSetChanged()
                         progressBar.setVisibility(View.GONE)
                         scrollView.setVisibility(View.VISIBLE)
@@ -82,7 +82,7 @@ class HomeFragment : Fragment() {
         //Home Category
         homeCatRec.setLayoutManager(LinearLayoutManager(activity, RecyclerView.HORIZONTAL, false))
         categoryList = ArrayList()
-        homeAdapter = HomeAdapter(activity, categoryList)
+        homeAdapter = activity?.let { HomeAdapter(it, categoryList) }
         homeCatRec.setAdapter(homeAdapter)
         db!!.collection("HomeCategory")
             .get()

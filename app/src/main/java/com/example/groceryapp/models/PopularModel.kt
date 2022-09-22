@@ -8,7 +8,7 @@ class PopularModel {
     var type: String? = null
     var img_url: String? = null
 
-    constructor() {}
+    constructor()
     constructor(
         name: String?,
         description: String?,

@@ -12,7 +12,7 @@ import com.bumptech.glide.Glide
 import android.widget.TextView
 import androidx.fragment.app.FragmentActivity
 
-class NavCategoryAdapter(var context: FragmentActivity?, var list: List<NavCategoryModel>) :
+class NavCategoryAdapter(var context: FragmentActivity?, private var list: List<NavCategoryModel>) :
     RecyclerView.Adapter<NavCategoryAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
